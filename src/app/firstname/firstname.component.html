@@ -1,0 +1,12 @@
+<div class="container">
+		<div class="col-sm-4">
+			<form #f="ngForm" (ngSubmit)="next(f)">
+					<div class="form-group">
+						<label for="firstname"><font color="red">*</font>First Name:</label>
+						<input [(ngModel)]="firstname" name="firstname" #firstName="ngModel" type="text" id="firstname" class="form-control btn-block">
+          </div>
+					<input type="submit" value="Next" class="btn btn-primary btn-block">
+			</form>
+		</div>
+</div>
+
